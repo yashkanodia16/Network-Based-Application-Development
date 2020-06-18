@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+footer,header,nav,main{
+	display: block;
+}
+	
+	body {
+	background-image: url(photo1.jfif);
+	background-size: cover;
+	background-attachment: fixed;
+	
+	}
+	
+	footer{
+	position:fixed;
+	display:flex;
+	bottom:0;
+	height:2 rem;
+	padding-left:20px;
+	opacity:0.9;
+	background-color: #012a62;
+	width:97.5%;
+	}
+
+	header
+	{
+		padding: 1px;
+		display:flex;
+		background-color: #012a62;
+		opacity:0.9;
+	}
+	
+	main{
+		padding:30px;
+		flex:1;
+	}
+	
+	.right{
+		display:inline;
+		margin-left:10px;
+		margin-right:10px;
+		font-variant: small-caps;
+	}
+	
+	.leagues{
+		bottom: 40px;
+		margin-left:27px;
+		margin-right:10px;
+	}
+	
+
+	article{
+		color:white;
+		text-align:justify;
+		
+	}
+
+	main{
+	flex: 1;}
+
+	.b{
+		margin: 1rem;
+		padding:0 2 2 2rem;
+	}
+
+	.color1{
+		color:white;
+	}
+	
+	.color2{
+		color:#5af7dc;
+	}
+	
+	
+	h2 {
+		text-align:center;
+		color:white;
+	}
+
+	style
+	{
+		indent-text: 5em;
+	}
+	
+	table {
+		border-collapse: collapse;
+		width: 60%;
+		margin-left:auto;
+		margin-right:auto;
+		
+
+	}
+
+	th, td {
+		text-align: left;
+		padding: 8px;
+		border-color:#4CAF50;
+		border-style:solid;
+	}
+
+	tr:nth-child(even)
+	{
+		background-color: #f2f2f2
+		}
+	tr:nth-child(odd)
+	{
+		background-color: #f2f2f2
+		}
+	th {
+		background-color: #4CAF50;
+		color: white;
+	}
+
+	.fa{
+  		padding: 10px;
+  		font-size: 3px;
+  		width: 10px;
+  		text-align: center;
+  		text-decoration: none;
+		margin: 5px 2px;
+		border-radius: 50%;
+		float:right;
+		
+	}
+
+	.fa:hover {
+  		opacity: 0.7;
+	}
+
+	.fa-facebook {
+  		background: #3B5998;
+  		color: white;
+	}
+
+	.fa-twitter {
+ 		 background: #55ACEE;
+  		 color: white;
+	}
+	
+	.fa-instagram {
+  		background: #3B5998;
+  		color: white;
+	}
+
+	.logo {
+		padding-top:20px;
+		padding-left:20px;
+		padding-bottom:5px;
+	
+	  }
+
+	.title{
+		padding-left:260px;
+		font-size:30px;
+		text-align:center;
+	}		 
+	
+	.login{
+	padding-left:200px;
+	float:right;
+	}	
+
+	.a{
+	padding-top:40px;
+	}
+
+	.image2{
+	padding-top:30px;
+	padding-left:50px;
+	}
+
+	.image3{
+	padding-top:30px;
+	padding-left:150px;
+	}
+
+	.image4{
+	padding-top:30px;
+	padding-left:165px;
+	}
+
+	.about{
+	padding-top:20px;
+	padding-left:50px;
+	}
+
+	.copy{
+	padding-top:20px;
+	padding-left:50px;
+	}
+
+	.social{
+	padding-left:830px;
+	}
+
+	.username{
+	color:white;
+	padding-left:1000px;
+	float:right;
+	
+	}
+	
+	.img5{
+		height:200px;
+		width:450px;
+		padding-left:100px;
+	}
+	
+	.display{
+	display:flex;
+	}
+	
+	.img3{
+		padding-left:200px;
+		padding-right:100px;
+	}
+	
+	.img4{
+	padding-left:100px;
+	padding-right:100px;
+	}
+	
+	.Host{
+		color: white;
+		padding-left:55px;
+	}
+	
+	.Details{
+		padding-left: 450px;
+		color: black;
+		font-weight:bold;
+	}
+	
+

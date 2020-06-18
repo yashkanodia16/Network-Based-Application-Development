@@ -1,0 +1,38 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<meta charset = 'UTF-8'>
+		<title> Soccer </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="/assets/stylesheets/styles.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	
+	<body>
+		<%- include ('partials/header.ejs') %>
+        <form class='table' method='POST'>
+            <label for="topic">Topic</label>
+            <input type="text" id="topic" name="topic" ><br><br>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="fixtures">Fixtures</label>
+            <input type="text" id="fixtures" name="fixtures"><br><br>
+            <label for="details">Details</label>
+            <input type="text" id="details" name="details"><br><br>
+            <label for="where">where</label>
+            <input type="text" id="where" name="where"><br><br>
+            <label for="name">when</label>
+            <input type="date" id="when" name="when"><br><br>
+            <label for="name">Time From</label>
+            <input type="time" id="timefrom" name="timefrom"><br><br>
+            <label for="name">Time To</label>
+            <input type="time" id="timeto" name="timeto"><br><br>
+            <button onclick="window.location.href=''" type="submit" >Create Connection</button>
+          </form>
+
+
+        <%- include ('partials/footer.ejs') %>
+		
+	
+	</body>
+</html>

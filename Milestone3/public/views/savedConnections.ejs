@@ -1,0 +1,41 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<meta charset = 'UTF-8'>
+		<title> Soccer </title>
+		<link rel="stylesheet" type="text/css" href="/assets/stylesheets/styles.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+	<body>
+		<%- include ('partials/header.ejs') %>
+		
+		
+		<main>
+			<table class="table">
+			<tr> 
+				<th>Matches</th>
+				<th>Home</th>
+				<th>Away</th>
+				<th>Choice</th>
+			</tr>
+			
+				<%for(var j=0; j < userConnections.length; j++){ %>	
+				<tr>								
+					<td><%= userConnections[j]._connection._connname %></td>
+					<td><%= userConnections[j]._connection._conntopic %></td>
+					<td><%= userConnections[j]._rsvp %></td>	
+					<td>
+						<form method="get">
+							<button type="submit" formaction="/connection/<%= userConnections[j]._connection._connid%>" class="btn btn-dark">Update</button>
+							<button type="submit" formaction="/myconnections/delete" name="connectionId" value="<%= userConnections[j]._connection._connid%>"	 class="btn btn-dark">Delete</button>
+						</form>
+					</td>
+				</tr>
+				<% } %>
+			</table>
+		</main>
+		<%- include ('partials/footer.ejs') %>
+		
+	</body>
+</html>

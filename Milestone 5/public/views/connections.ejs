@@ -1,0 +1,34 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<meta charset = 'UTF-8'>
+		<title> Soccer </title>
+		<link rel="stylesheet" type="text/css" href="/assets/stylesheets/styles.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+	<body>
+		<%- include ('partials/header.ejs') %>
+		
+		<main class="color1">
+			<section>
+				<% for(var i=0; i< data.topics.length; i++){ %>
+					<h3><%= data.topics[i] %></h3>
+				<ul>
+					<% for(var j=0; j < data.connections.length; j++){
+						if(data.connections[j]._conntopic === data.topics[i] ){%>
+
+					<li><a href="connection/<%= data.connections[j].getconnid()%>" class="color1"><%= data.connections[j].getconnname() %></a></li>
+						<% } 
+					 }%>
+				</ul>
+				<% } %>
+			</section>
+		  </main>
+					
+		
+
+		<%- include ('partials/footer.ejs') %>
+		
+	</body>
+</html>

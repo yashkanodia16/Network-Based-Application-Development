@@ -1,0 +1,52 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<meta charset = 'UTF-8'>
+		<title> Soccer </title>
+		<link rel="stylesheet" type="text/css" href="/assets/stylesheets/styles.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+	<body>
+		<%- include ('partials/header.ejs') %>
+		
+		
+		<main>
+			<table class="table">
+			<tr> 
+				<th>Matches</th>
+				<th>Home</th>
+				<th>Away</th>
+				<th>Choice</th>
+				<th></th>
+			</tr>
+			<tr>
+				<td>Real Madrid vs Juventus</td>
+				<td>Real Madrid</td>
+				<td>Juventus</td>
+				<td>Yes</td>
+				<td><button onclick="window.location.href='/connections?connId=1'" type="submit">Update</button>&emsp;
+					<button onclick="window.location.href='savedConnections'" type="submit">Delete</button>		
+			</tr>	
+			<tr> 	
+				<td>Barcelona vs Napoli</td>
+				<td>Barcelona</td>
+				<td>Napoli</td>
+				<td>No</td>
+				<td><button onclick="window.location.href='/connections?connId=2'" type="submit">Update</button>&emsp;
+					<button onclick="window.location.href='savedConnections'" type="submit">Delete</button>
+			</tr>
+			<tr> 
+				<td>Liverpool vs Wolves</td>
+				<td>Wolves</td>
+				<td>Liverpool</td>
+				<td>Yes</td>
+				<td><button onclick="window.location.href='/connections?connId=4'" type="submit">Update</button>&emsp;
+					<button onclick="window.location.href='savedConnections'" type="submit">Delete</button>	
+			</tr>
+			</table>
+		</main>
+		<%- include ('partials/footer.ejs') %>
+		
+	</body>
+</html>

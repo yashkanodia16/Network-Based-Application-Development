@@ -1,0 +1,48 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<meta charset = 'UTF-8'>
+		<title> Soccer </title>
+		<link rel="stylesheet" type="text/css" href="/assets/stylesheets/styles.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+	<body>
+		<%- include ('partials/header.ejs') %>
+		
+		<main>
+				
+					<div class="display">	
+						
+						<div>
+						<h4 class="color2"><b>Ready for Meetup?</b><br> </h4>
+						<p class="color1"><%= data.connection._connFixtures %>&ensp;&emsp;&emsp;&emsp;&emsp;</p>
+							<form method="get">
+								<input hidden name="id" value="<%= data.connection.connid %>">
+								<button type="submit" formaction="/myconnections/rsvp" class="btn btn-success" name="rsvp" value="Yes">Yes</button>
+								<button type="submit" formaction="/myconnections/rsvp" class="btn btn-danger" name="rsvp" value="No">No</button>
+								<button type="submit" formaction="/myconnections/rsvp" class="btn btn-info" name="rsvp" value="Maybe">Maybe</button>
+							</form></p>
+						</div>
+						<div>
+						<img src="photo5.jpg" alt="" class="img5">
+						</div>
+						<div class="Host"><br><br><br>
+							Hosted by: <%= data.connection._connhost %> <br>
+							Date: <%= data.connection.date %><br>
+
+						</div>
+					</div>
+			
+				<div class="Details"><br>
+					<%= data.connection.detail %>
+				</div>
+					
+				<br>
+			
+		</main>			
+
+		<%- include ('partials/footer.ejs') %>
+		
+	</body>
+</html>
